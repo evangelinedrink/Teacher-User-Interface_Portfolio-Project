@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-witdth, initial-scale=1"/>
+
+<!--Bootstrap CSS-->
+<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+
+<!--Title Tag for the website-->
+<title>Teacher Interface</title>
+
+</head>
+
+
+<body>
+<!--Create the header for the teacher website interface-->
+<header class="jumbotron jumbotron-fluid"> <!--Gets rid of rounded corners in the header-->
+<div class="container">
+    <div class="row row-content">
+        <div class="col col-md-2">
+            <!--Image of the school/district logo-->
+        </div>
+
+        <div class="col col-md-8">
+            <!--Window: New Email Messages Update-->
+            <!--Window: Current Weather Update, https://www.youtube.com/watch?v=n4dtwWgRueI -->
+        </div>
+        
+        <div class="col col-md-2"> <!--Creates an email button in the website's header.-->
+            <button type="button" class="btn btn-secondary btn-block">Settings/Log Off</button>
+            <button type="button" class="btn btn-secondary btn-block">Emails</button> 
+        </div>
+    </div>
+</div>
+</header>
+
+<!--Tabs containing the buttons to access different parts of the website-->
+<div class="container">
+    <div class="row">
+        <div class="col col-md-3">
+            <button type="button" class="btn btn-secondary btn-lg btn-block">Attendance Page</button>
+            <button type="button" class="btn btn-dark btn-lg btn-block">Grades</button>
+            <button type="button" class="btn btn-secondary btn-lg btn-block">Assignments and Tests</button>
+            <button type="button" class="btn btn-dark btn-lg btn-block">Announcements</button>
+            <button type="button" class="btn btn-secondary btn-lg btn-block">Contact Parents and/or Students</button>
+            <button type="button" class="btn btn-dark btn-lg btn-block">Notes and Contact Logs</button>
+        </div>
+
+        <div class="col col-md-6">
+            <!--Area to show the active tab-->
+        </div>
+
+        <div class="col col-md-3">
+            <!--Student Submissions-->
+            <!--Calendar for scheduling events, https://www.youtube.com/watch?v=pwC2IFovnBM -->
+                <!--For the calendar, make sure to have show the calendar, but when the calendar is clicked, modular is opened to help schedule the event-->
+        </div>
+    </div>
+</div>
+
+<!--jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
