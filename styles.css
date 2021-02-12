@@ -1,0 +1,8 @@
+.dropdown-menu {
+    overflow-x: visible;
+    overflow-y: visible;
+}
+
+.table-responsive {
+    overflow-y: visible !important;
+}

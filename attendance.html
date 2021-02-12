@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8"/>
+<meta name= "viewport" content="width=device-width, initial-scale=1"/>
+
+<!--Bootstrap CSS-->
+<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+
+<!--Title Tag for this webpage-->
+<title>Attendance</title>
+</head>
+
+<body>
+
+<!--Would like to create a section where the teacher can add students into the attendance list.  It will sort the new names alphabetically.-->
+
+<!--Creating the table containing students' names.-->
+<div class="container">
+    <div class="row row-content">
+        <div class="col-auto">
+            <table class="table-secondary table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">First Name</th>
+                        <th scope="col">Last Name</th>
+                        <th scope="col">Attendance</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Mary</td> <!--First Student-->
+                        <td>Anderson</td>
+                        <td> <!--Creating the Attendance Dropdown Selector-->
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="attendanceDropdown1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Present
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="attendanceDropdown1">
+                                    <li><a class="dropdown-item active" href="#" aria-current="true">Present</a></li>
+                                    <li><a class="dropdown-item" href="#">Absent</a></li>
+                                    <li><a class="dropdown-item" href="#">Late</a></li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Deandra</td> <!--Second Student-->
+                        <td>Brakerman</td>
+                        <td> <!--Creating the Attendance Dropdown Selector-->
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="attendanceDropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Present
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="attendanceDropdown2">
+                                    <li><a class="dropdown-item active" href="#" aria-current="true">Present</a></li>
+                                    <li><a class="dropdown-item" href="#">Absent</a></li>
+                                    <li><a class="dropdown-item" href="#">Late</a></li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Manuel</td> <!--Third Student-->
+                        <td>Diaz</td>
+                        <td> <!--Creating the Attendance Dropdown Selector-->
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="attendanceDropdown3" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Present
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="attendanceDropdown3">
+                                    <li><a class="dropdown-item active" href="#" aria-current="true">Present</a></li>
+                                    <li><a class="dropdown-item" href="#">Absent</a></li>
+                                    <li><a class="dropdown-item" href="#">Late</a></li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Daniel</td> <!--Fourth Student-->
+                        <td>Lee</td>
+                        <td> <!--Creating the Attendance Dropdown Selector-->
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="attendanceDropdown4" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Present
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="attendanceDropdown4">
+                                    <li><a class="dropdown-item active" href="#" aria-current="true">Present</a></li>
+                                    <li><a class="dropdown-item" href="#">Absent</a></li>
+                                    <li><a class="dropdown-item" href="#">Late</a></li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Quentin</td> <!--Fifth Student-->
+                        <td>Villard</td>
+                        <td> <!--Creating the Attendance Dropdown Selector-->
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="attendanceDropdown5" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Present
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="attendanceDropdown5">
+                                    <li><a class="dropdown-item active" href="#" aria-current="true">Present</a></li>
+                                    <li><a class="dropdown-item" href="#">Absent</a></li>
+                                    <li><a class="dropdown-item" href="#">Late</a></li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<!--jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
