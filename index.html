@@ -21,6 +21,7 @@
     <div class="row row-content">
         <div class="col col-md-2">
             <!--Image of the school/district logo-->
+            <!--https://icons8.com/icons/set/school-->
         </div>
 
         <div class="col col-md-8">
@@ -40,16 +41,17 @@
 <div class="container">
     <div class="row row-content">
         <div class="col col-md-3">
-            <button type="button" class="btn btn-secondary btn-lg btn-block">Attendance Page</button>
-            <button type="button" class="btn btn-dark btn-lg btn-block">Grades</button>
-            <button type="button" class="btn btn-secondary btn-lg btn-block">Assignments and Tests</button>
-            <button type="button" class="btn btn-dark btn-lg btn-block">Announcements</button>
-            <button type="button" class="btn btn-secondary btn-lg btn-block">Contact Parents and/or Students</button>
-            <button type="button" class="btn btn-dark btn-lg btn-block">Notes and Contact Logs</button>
+            <button type="button" class="btn btn-secondary btn-lg btn-block" onclick="activeWindow()" id="attendance">Attendance Page</button>
+            <button type="button" class="btn btn-dark btn-lg btn-block" onclick="activeWindow()" id="grades">Grades</button>
+            <button type="button" class="btn btn-secondary btn-lg btn-block" onclick="activeWindow()" id="assignments">Assignments and Tests</button>
+            <button type="button" class="btn btn-dark btn-lg btn-block" onclick="activeWindow()" id="announcements">Announcements</button>
+            <button type="button" class="btn btn-secondary btn-lg btn-block" onclick="activeWindow()" id="contactps">Contact Parents and/or Students</button>
+            <button type="button" class="btn btn-dark btn-lg btn-block" onclick="activeWindow()" id="notes">Notes and Contact Logs</button>
         </div>
 
         <div class="col col-md-6">
             <!--Area to show the active tab-->
+            <iframe id="iframe" src="index.js" width="800" height="600" title="Active Window"></iframe>
         </div>
 
         <div class="col col-md-3">
